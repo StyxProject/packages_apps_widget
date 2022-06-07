@@ -1,0 +1,22 @@
+android_app {
+    name: "StyxWidget",
+
+    resource_dirs: ["res"],
+
+    srcs: [
+        "src/**/*.kt",
+    ],
+
+    product_specific: true,
+
+    static_libs: [
+        "android-common",
+        "android-opt-timezonepicker",
+        "androidx.preference_preference",
+        "colorpicker",
+        "com.google.android.material_material",
+        "kotlin-annotations",
+    ],
+
+    sdk_version: "current",
+}
